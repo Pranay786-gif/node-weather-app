@@ -8,7 +8,7 @@ fetch(`/weather?address=${city}`)
     if(res.error){
         document.getElementById("location").innerHTML=res.error
     } else{
-    document.getElementById("location").innerHTML=`the temprature of ${res.location} is ${res.forecast}`
+    document.getElementById("location").innerHTML=`the temprature of ${res.location} is ${res.forecast} and humidity is ${res.humidity}`
     }
 
 })

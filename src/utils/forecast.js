@@ -13,7 +13,8 @@ const forecast = (lat,lang,callback) => {
       } else {
        callback(undefined,{
           temperature:response.body.current.temperature,
-          feelslike:response.body.current.feelslike
+          feelslike:response.body.current.feelslike,
+          humidity:response.body.current.humidity
        })
       }
     });
